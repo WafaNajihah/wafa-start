@@ -1,0 +1,155 @@
+#content{
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-auto-rows: minmax(100px, auto);
+  grid-gap: none;
+  max-width: 960px;
+
+  grid-template-areas:
+  "header header header header header"
+  "header header header header header"
+  "nav nav nav nav  nav"
+  "main main main main main"
+  "main main main main main"
+  "main main main main main"
+    "main main main main main"
+"kosong kosong kosong kosong kosong"
+"contact contact contact contact contact"
+  "footer footer footer footer footer"
+}
+/*desktop view*/
+@media screen and (min-width:960px){
+  #content{
+    display:grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-auto-rows: minmax(70px, auto);
+    grid-gap: none;
+    max-width: 1940px;
+    margin:0 auto;
+
+    grid-template-areas:
+    "header header header header header"
+    "header header header header header"
+    "nav nav nav nav  nav"
+    "main main main main main"
+    "main main main main main"
+    "main main main main main"
+      "main main main main main"
+  "kosong kosong kosong kosong kosong"
+  "contact contact contact contact contact"
+    "footer footer footer footer footer"
+  }
+}
+
+
+
+body{
+  text-align: center;
+  justify-content:center;
+}
+#content {
+  background-color: #8BA0DB;
+  text-align: center;
+}
+
+header{
+  grid-area: header;
+  background-color: #F9795E;
+  height:350px;
+  text-align: center;
+}
+nav{
+  grid-area: nav;
+  background-color: #3E5FBB;
+  overflow:hidden;
+  padding-top: 12px;
+  padding-left: 30px;
+  padding-right: 30px;
+
+
+}
+main{
+  grid-area: main;
+  background-color: #8BA0DB;
+}
+
+
+#kosong{
+  grid-area: kosong;
+  height:100px;
+  padding-bottom: 100px;
+}
+#contact{
+  grid-area: contact;
+  background-color: grey;
+  padding-top: 14px;
+  padding-bottom: 8px;
+
+}
+#container{
+  min-height:100vh;
+  position: relative;
+}
+
+nav a{
+
+  color: black;
+  text-align: center;
+  padding-top: 12px;
+  padding-left: 30px;
+  padding-right: 30px;
+  padding-bottom: 12px;
+  font-size:20px;
+text-decoration:none;
+}
+
+footer{
+  grid-area: footer;
+  height:70px;
+  background-color: blue;
+  text-align: center;
+  padding-top: 30px;
+  bottom: 0;
+  width:100%;
+
+ }
+
+nav a:hover{
+  background-color:#435179;
+  color: white;
+
+}
+nav a.active{
+  background-color: #435179;
+  color:white;
+}
+
+
+
+.logo{
+  width:300px;
+  height:230px;
+}
+#kosong2{
+
+  padding-bottom: 50px;
+}
+
+
+
+  h1{
+    font-size: 30px;
+  }
+  h2{
+    font-size: 25px;
+  }
+  h3{
+    font-size: 20px;
+  }
+  h4{
+    font-size: 18px;
+  }
+  p{
+    font-size: 14px;
+    font-family: 'Varela Round',sans-serif;
+  }

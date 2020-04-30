@@ -1,0 +1,72 @@
+body{
+  justify-content: center;
+  text-align: center;
+}
+aside{
+  height: 40%;
+  width: 100%;
+
+
+  background-color:#BFCBD1;
+  overflow-x:hidden;
+  padding-top:20px;
+  text-align: center;
+
+  justify-content: center;
+
+}
+aside a{
+  text-decoration: none;
+  display: block;
+  padding-bottom: 20px;
+  padding-top: 12px;
+  text-align: center;
+  cursor: pointer;
+  transition: 0.5s;
+}
+aside a:hover{
+  background-color:#33657E;
+  color: white;
+  transform: 20px 20px;
+
+}
+
+aside a.active{
+  background-color: #33657E;
+  color:white;
+}
+#admin {
+display: grid;
+grid-template-columns:80%;
+grid-auto-rows: 200px;
+grid-template-rows: repeat(4,minmax(120px,auto));
+grid-gap: 5px;
+
+max-width: 960px;
+margin: 0 auto;
+position: center;
+justify-content: center;
+
+}
+div#admin1{
+  background-color: #D1DADE;
+  justify-content:center;
+  text-align: center;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  border-radius: 12px;
+}
+ul{
+  text-align: left;
+}
+
+
+img{
+  height:310px;
+  width: 420px;
+}
+img.admin2{
+  height: 200px;
+  width:300px;
+
+}
